@@ -65,7 +65,7 @@ function changeRank($rs, $token) {
 			CURLOPT_RETURNTRANSFER => true,
 			CURLOPT_POST => true,
 			CURLOPT_HEADER => true,
-			CURLOPT_HTTPHEADER => array("Cookie: $rs", "X-CSRF-TOKEN: $token")
+			CURLOPT_HTTPHEADER => array("Cookie: $rs", "X-CSRF-TOKEN: $token", 'Content-Length: 0')
 		)
 	);
 
